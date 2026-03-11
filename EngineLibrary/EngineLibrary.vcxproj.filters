@@ -48,5 +48,40 @@
     <ClInclude Include="include\Core\Log\LogLevel.h">
       <Filter>Core\Log</Filter>
     </ClInclude>
+    <ClInclude Include="include\Core\File\FileData.h">
+      <Filter>Core\File</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\File\FileSystem.h">
+      <Filter>Core\File</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\Time\GameClock.h">
+      <Filter>Core\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\Time\RealClock.h">
+      <Filter>Core\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\Time\Timer.h">
+      <Filter>Core\Time</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Logger.cpp">
+      <Filter>Core\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameClock.cpp">
+      <Filter>Core\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RealClock.cpp">
+      <Filter>Core\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Timer.cpp">
+      <Filter>Core\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FileData.cpp">
+      <Filter>Core\File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FileSystem.cpp">
+      <Filter>Core\File</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

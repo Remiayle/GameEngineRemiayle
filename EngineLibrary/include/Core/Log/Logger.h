@@ -8,8 +8,8 @@
 #include <vector>
 #include <memory>
 #include <string>
-#include "LogLevel.h"
-#include "ILogSink.h"
+#include "Core/Log/LogLevel.h"
+#include "Core/Log/ILogSink.h"
 
 namespace Remiayle::Core::Log
 {

@@ -21,11 +21,24 @@
   <ItemGroup>
     <ClInclude Include="include\Core\Assert.h" />
     <ClInclude Include="include\Core\BuildConfig.h" />
+    <ClInclude Include="include\Core\File\FileData.h" />
+    <ClInclude Include="include\Core\File\FileSystem.h" />
     <ClInclude Include="include\Core\Log\ILogSink.h" />
     <ClInclude Include="include\Core\Log\Logger.h" />
     <ClInclude Include="include\Core\Log\LogLevel.h" />
     <ClInclude Include="include\Core\Macros.h" />
+    <ClInclude Include="include\Core\Time\GameClock.h" />
+    <ClInclude Include="include\Core\Time\RealClock.h" />
+    <ClInclude Include="include\Core\Time\Timer.h" />
     <ClInclude Include="include\Core\Types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\FileData.cpp" />
+    <ClCompile Include="src\FileSystem.cpp" />
+    <ClCompile Include="src\GameClock.cpp" />
+    <ClCompile Include="src\Logger.cpp" />
+    <ClCompile Include="src\RealClock.cpp" />
+    <ClCompile Include="src\Timer.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
