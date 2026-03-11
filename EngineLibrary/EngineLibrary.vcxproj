@@ -21,6 +21,9 @@
   <ItemGroup>
     <ClInclude Include="include\Core\Assert.h" />
     <ClInclude Include="include\Core\BuildConfig.h" />
+    <ClInclude Include="include\Core\Log\ILogSink.h" />
+    <ClInclude Include="include\Core\Log\Logger.h" />
+    <ClInclude Include="include\Core\Log\LogLevel.h" />
     <ClInclude Include="include\Core\Macros.h" />
     <ClInclude Include="include\Core\Types.h" />
   </ItemGroup>
