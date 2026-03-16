@@ -25,6 +25,9 @@
     <Filter Include="Core\Log">
       <UniqueIdentifier>{0c6a5d65-0639-44ad-9889-a37ad27ac900}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Window">
+      <UniqueIdentifier>{69fe6e23-ddf6-4d82-8a1e-a012c3ca7cc0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Core\Assert.h">
@@ -63,6 +66,9 @@
     <ClInclude Include="include\Core\Time\Timer.h">
       <Filter>Core\Time</Filter>
     </ClInclude>
+    <ClInclude Include="include\Window\WindowManager.h">
+      <Filter>Window</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Logger.cpp">
@@ -82,6 +88,9 @@
     </ClCompile>
     <ClCompile Include="src\FileSystem.cpp">
       <Filter>Core\File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WindowManager.cpp">
+      <Filter>Window</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

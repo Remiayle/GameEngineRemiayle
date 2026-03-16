@@ -31,6 +31,7 @@
     <ClInclude Include="include\Core\Time\RealClock.h" />
     <ClInclude Include="include\Core\Time\Timer.h" />
     <ClInclude Include="include\Core\Types.h" />
+    <ClInclude Include="include\Window\WindowManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\FileData.cpp" />
@@ -39,6 +40,7 @@
     <ClCompile Include="src\Logger.cpp" />
     <ClCompile Include="src\RealClock.cpp" />
     <ClCompile Include="src\Timer.cpp" />
+    <ClCompile Include="src\WindowManager.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
