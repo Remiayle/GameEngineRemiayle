@@ -28,6 +28,9 @@
     <Filter Include="Window">
       <UniqueIdentifier>{69fe6e23-ddf6-4d82-8a1e-a012c3ca7cc0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="EngineApp">
+      <UniqueIdentifier>{6ad2c332-27a0-419c-bd35-97b119fec42e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Core\Assert.h">
@@ -69,6 +72,9 @@
     <ClInclude Include="include\Window\WindowManager.h">
       <Filter>Window</Filter>
     </ClInclude>
+    <ClInclude Include="include\EngineApp\Application.h">
+      <Filter>EngineApp</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Logger.cpp">
@@ -91,6 +97,9 @@
     </ClCompile>
     <ClCompile Include="src\WindowManager.cpp">
       <Filter>Window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Application.cpp">
+      <Filter>EngineApp</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

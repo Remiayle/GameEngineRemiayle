@@ -68,6 +68,15 @@ namespace Remiayle::Window
         bool ProcessMessages();
 
         /*!
+         * @brief 終了処理（ウィンドウ破棄・クラス登録解除）
+         * @return true : 成功 false : 失敗
+         *
+         * ウィンドウの破棄、フルスクリーン解除、ウィンドウクラスの登録解除など、
+         * WindowManager が保持する OS リソースを安全に解放します。
+         */
+        bool Cleanup();
+
+        /*!
          * @brief フルスクリーン切替
          * @param enable true でフルスクリーン化
          */

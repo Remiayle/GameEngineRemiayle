@@ -47,12 +47,10 @@ namespace Remiayle::Window
         wc.hInstance = m_HInstance;
         wc.lpszClassName = m_Config.title.c_str();
 
-        if (!RegisterClassEx(&wc))
-            return false;
+        if (!RegisterClassEx(&wc)) return false;
 
         DWORD style = WS_OVERLAPPEDWINDOW;
-        if (!m_Config.resizable)
-            style &= ~(WS_THICKFRAME | WS_MAXIMIZEBOX);
+        if (!m_Config.resizable) style &= ~(WS_THICKFRAME | WS_MAXIMIZEBOX);
 
         RECT rc = { 0, 0, (LONG)m_Width, (LONG)m_Height };
         AdjustWindowRect(&rc, style, FALSE);
@@ -71,8 +69,7 @@ namespace Remiayle::Window
             this
         );
 
-        if (!m_HWnd)
-            return false;
+        if (!m_HWnd) return false;
 
         return true;
     }
@@ -107,12 +104,30 @@ namespace Remiayle::Window
     }
 
     /*!
+     * @brief 終了処理
+     */
+    bool WindowManager::Cleanup()
+    {
+        bool success = true;
+
+        if (m_HWnd)
+        {
+            if (!DestroyWindow(m_HWnd)) success = false;
+
+            m_HWnd = nullptr;
+        }
+
+        if (!UnregisterClass(m_Config.title.c_str(), m_HInstance)) success = false;
+
+        return success;
+    }
+
+    /*!
      * @brief フルスクリーン切替
      */
     void WindowManager::SetFullScreen(bool enable)
     {
-        if (enable == m_IsFullScreen)
-            return;
+        if (enable == m_IsFullScreen) return;
 
         if (enable)
         {
@@ -157,8 +172,7 @@ namespace Remiayle::Window
             window = reinterpret_cast<WindowManager*>(GetWindowLongPtr(hwnd, GWLP_USERDATA));
         }
 
-        if (window)
-            return window->WindowProcedure(hwnd, msg, wp, lp);
+        if (window) return window->WindowProcedure(hwnd, msg, wp, lp);
 
         return DefWindowProc(hwnd, msg, wp, lp);
     }
