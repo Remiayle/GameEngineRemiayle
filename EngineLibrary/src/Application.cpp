@@ -32,7 +32,7 @@ namespace Remiayle::EngineApp
 		// ------------------------------
 
 		// WindowManager
-		m_WindowManager = std::make_unique<WindowManager>(m_Config.winCon);
+		m_WindowManager = std::make_unique<Window::WindowManager>(m_Config.winCon);
 		REMIAYLE_ASSERT(m_WindowManager->Setup());
 
 

@@ -71,6 +71,11 @@ namespace Remiayle::Window
 
         if (!m_HWnd) return false;
 
+        if (m_Config.isFullScreen)
+        {
+            SetFullScreen(true);
+        }
+
         return true;
     }
 
@@ -127,8 +132,6 @@ namespace Remiayle::Window
      */
     void WindowManager::SetFullScreen(bool enable)
     {
-        if (enable == m_IsFullScreen) return;
-
         if (enable)
         {
             m_WindowedStyle = GetWindowLong(m_HWnd, GWL_STYLE);

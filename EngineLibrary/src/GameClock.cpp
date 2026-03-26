@@ -12,6 +12,10 @@ namespace Remiayle::Core::Time
 
     f32 GameClock::s_DeltaTime = 0.0f;
     f32 GameClock::s_TotalTime = 0.0f;
+
+    f32 GameClock::s_UnscaledDeltaTime = 0.0f;
+    f32 GameClock::s_UnscaledTotalTime = 0.0f;
+
     u64 GameClock::s_FrameCount = 0;
 
     f32 GameClock::s_FPS = 0.0f;

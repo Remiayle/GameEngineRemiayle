@@ -9,8 +9,6 @@
 
 namespace Remiayle::EngineApp
 {
-    using namespace Window;
-
     /*!
      * @struct AppConfig
      * @brief Application クラスの初期設定を保持する構造体
@@ -21,7 +19,7 @@ namespace Remiayle::EngineApp
      */
     struct AppConfig
     {
-        WindowManagerConfig winCon;    /**< ウィンドウ生成用設定 */
+        Window::WindowManagerConfig winCon;    /**< ウィンドウ生成用設定 */
     };
 
     /*!
@@ -81,6 +79,6 @@ namespace Remiayle::EngineApp
 
     private:
         const AppConfig m_Config;                          /**< アプリケーション初期設定 */
-        std::unique_ptr<WindowManager> m_WindowManager;    /**< ウィンドウ管理クラス */
+        std::unique_ptr<Window::WindowManager> m_WindowManager;    /**< ウィンドウ管理クラス */
     };
 }
